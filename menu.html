@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Menu Lateral com Hamburger</title>
+  <style>
+    /* Estilos CSS para o menu */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background: #333;
+      color: #fff;
+      transform: translateX(-80%);
+      transition: transform 0.3s ease;
+      z-index: 1;
+    }
+
+    .menu.active {
+      transform: translateX(0);
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .menu ul li {
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    .menu ul li:hover {
+      background: #555;
+    }
+
+    .hamburger {
+      position: fixed;
+      left: 12px;
+      top: 0px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 12;
+     color: cornflowerblue;
+     font-weight: bolder;
+     font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="hamburger" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+  <div class="menu" id="menu">
+    <ul class="ul_menu">
+      <li>Menu 1</li>
+      <li>Menu 2</li>
+      <li>Menu 3</li>
+      <li>Menu 4</li>
+      <li>Menu 5</li>
+      <li>Menu 6</li>
+      <li>Menu 7</li>
+      <li>Menu 8</li>
+      <li>Menu 9</li>
+      <li>Menu 10</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

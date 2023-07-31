@@ -1,0 +1,112 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+.navegacao{
+    position: fixed;
+    width: 100%;
+}
+.paralax h1{
+    font-size: clamp(1.8em, 6vw,4em);
+    text-align: center;
+    color: #FAF5E4;
+    text-shadow: 3px 4px 5px black;
+}
+.ul_container{
+    background-color: #ADD9D9;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.listas_contents{
+    display: inline;
+    margin: 10px;
+}.listas_contents a:hover{
+    color: #A66641;
+}
+.listas_contents a{
+    color: #717170;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 65px;
+    width: 250px;
+    height: 90%;
+    background: #F5F5F4;
+    color: #717170;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .menu.active {
+    transform: translateX(5px);
+  }
+
+  .menu .ul_menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .menu .ul_menu li {
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .menu .ul_menu li:hover {
+    background: #ADD9D9;
+  }
+
+  .hamburger {
+    display: none;
+    position: fixed;
+    left: 18px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 12;
+   color: #717170;
+   font-weight: bolder;
+   font-family: Arial, Helvetica, sans-serif;
+  }.hamburger:hover{
+    color: #A66641;
+  }
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/img03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+   background: #F1F1F3;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media (max-width: 768px){
+    .hamburger{
+        display: block;
+    }.listas_contents{
+        display: none;
+    }main{
+        background-position: center center;
+    }
+}
