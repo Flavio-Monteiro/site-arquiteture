@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Menu navegação</title>
-</head>
-<body>
-    <nav class="navegacao">
-        <ul class="ul_container">
-            <li class="listas_contents"><a href="#">Projetos</a></li>
-            <li class="listas_contents"><a href="#">Sobre</a></li>
-            <li class="listas_contents"><a href="#">Contato</a></li>
-            <div class="hamburger" onclick="toggleMenu()">
-                &#x2630;
-            </div>
-        </ul>
-    </nav>
-    <div class="menu" id="menu">
-      <ul class="ul_menu">
-        <li><a href="sobre">Sobre</a></li>
-        <li>Projetos</li>
-        <li>Parceiros</li>
-        <li>Orçamento</li>
-        <li>Contato</li>
-        <li>Menu 6</li>
-      </ul>
-    </div>
-    <main>
-        <div class="paralax">
-            <h1>Arquitetura e Urbanismo</h1>
-        </div>
-        <!-- <div class="sobre">
-            <h1>Sobre Nós</h1>
-        </div> -->
-    </main>
-    <footer>
-      <p>Desenvolvido por Flávio Monteiro</p>
-    </footer>
 
-   <script src="assets/js/script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Menu navegação</title>
+</head>
+
+<body>
+  <nav class="navegacao">
+    <ul class="ul_container">
+      <li class="listas_contents"><a href="#">Projetos</a></li>
+      <li class="listas_contents"><a href="#">Sobre</a></li>
+      <li class="listas_contents"><a href="#">Contato</a></li>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#x2630;
+      </div>
+    </ul>
+  </nav>
+  <div class="menu" id="menu">
+    <ul class="ul_menu">
+      <li><a href="sobre">Sobre</a></li>
+      <li>Projetos</li>
+      <li>Parceiros</li>
+      <li>Orçamento</li>
+      <li>Contato</li>
+      <li>Menu 6</li>
+    </ul>
+  </div>
+  <main>
+    <div class="paralax">
+      <div class="buttom see-buttom">
+        see all projects
+      </div>
+    </div>
+      <div class="sobre">
+        <div class="projeto-txt">
+          <h1 class="txt-h1">Projetos</h1>
+        </div>
+        <img src="assets/images/designer-inteior.png" alt="" class="interiores">
+        <img src="assets/images/projeto-estruturl.png" alt="" class="estrutural">
+        <img src="assets/images/projeto-residencial.png" alt="" class="residencial">
+      </div>
+  </main>
+  <footer>
+    <p>Desenvolvido por Flávio Monteiro</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+ 
 </body>
+
 </html>
